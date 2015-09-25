@@ -1,20 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewQuestion: false,
+  updateQuestionForm: false,
   actions: {
-    questionFormShow() {
-      this.set('addNewQuestion', true);
+    updateQuestionForm() {
+      this.set('updateQuestionForm', true);
     },
-
-    save1() {
+    update(question) {
       var params = {
         text: this.get('text'),
         author: this.get('author'),
         notes: this.get('notes'),
       };
-      this.set('addNewQuestion', false),
-      this.sendAction('save2', params);
+      this.set('updateQuestionForm', false);
+      this.sendAction('update', question, params);
     }
   }
 });
