@@ -1,5 +1,5 @@
 <li>
-  {{question.text}} by {{question.author}}
+  {{#linkTo 'question' question.id}}{{question.text}}{{/linkTo}} by {{question.author}}
   {{update-question question=question update="update"}}
   <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button>
 </li>
