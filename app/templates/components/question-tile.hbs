@@ -1,1 +1,4 @@
-<li>{{question.question}} by {{question.author}}</li>
+<li>
+  {{question.question}} by {{question.author}}
+  <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button>
+</li>
