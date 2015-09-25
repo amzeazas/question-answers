@@ -1,0 +1,10 @@
+<center>
+  <h1>Welcome to The Forum!</h1>
+  <h4>A community helping each other find answers.</h4>
+</center>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
