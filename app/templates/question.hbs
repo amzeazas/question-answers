@@ -1,1 +1,7 @@
 {{single-question question=model}}
+<br>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
