@@ -1,8 +1,7 @@
 {{single-question question=model}}
-<br>
 <ul>
   {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
+    {{answer-tile answer=answer update="update"}}
   {{/each}}
 </ul>
 
