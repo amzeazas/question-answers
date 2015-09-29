@@ -12,4 +12,8 @@
     <br>
     {{question.notes}}
   </div>
+  <div class="panel-footer">
+    {{update-question question=question update="update"}}
+    <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button>
+  </div>
 </div>
