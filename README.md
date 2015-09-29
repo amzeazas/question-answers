@@ -7,7 +7,7 @@ By Alexa Zeazas
 This social app allows users to post questions and contribute answers to questions.
 
 _Goals for future updates:_
-* _Add ability to add answers to questions._
+* _Add user login functionality._
 
 ## Prerequisites
 
